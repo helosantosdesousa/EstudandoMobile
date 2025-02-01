@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i=0; i < 6;  i++){
             int n = rd.nextInt(60) + 1;
-            ar.add(n);
+            if(!ar.contains(n)){
+                ar.add(n);
+            }
         }
         return ar;
     }
